@@ -1,0 +1,29 @@
+{
+  "name": "miniMAX",
+  "version": "0.0.1",
+  "description": "web UI framework",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neogen-projects/miniMAX.git"
+  },
+  "keywords": [
+    "web",
+    "ui",
+    "components",
+    "layout",
+    "minimax"
+  ],
+  "author": "xx",
+  "license": "unlicense",
+  "bugs": {
+    "url": "https://github.com/neogen-projects/miniMAX/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-less": "~0.5.2",
+    "grunt-contrib-watch": "~0.4.4"
+  }
+}

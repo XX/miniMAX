@@ -1,0 +1,174 @@
+/* ********** */
+/* Alignments */
+/* ********** */
+
+.centric {
+  display: table; /* Нужно, если ширина не фиксирована */
+                  /* If you don't want to set a fixed width */
+  margin: 0 auto;
+}
+
+.centered {
+  text-align: center;
+}
+
+.centered > * {
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* ********** */
+/* Expandings */
+/* ********** */
+
+.horizontal-expand, .horizontal-expand-item > .item {
+  min-width: 100%;
+}
+
+.vertical-expand {
+  min-height: 100%;
+}
+
+/* ******************** */
+/* Display table styles */
+/* ******************** */
+
+.table {
+  display: table; 
+}
+
+.row {
+  display: table-row;   
+}
+
+.col {
+  display: table-cell;
+}
+
+/* *************** */
+/* Vertical Layout */
+/* *************** */
+
+.vertical-layout {
+  display: inline-block;
+}
+
+.vertical-layout > * {
+  display: block;
+  position: relative;
+  right: 0;
+}
+
+/* ***************** */
+/* Horisontal Layout */
+/* ***************** */
+
+.horizontal-layout {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.horizontal-layout > * {
+  position: relative;
+  float: left;
+}
+
+/* ************************ */
+/* Table Layout */
+/* ************************ */
+
+.table-layout {
+  .table;
+}
+
+.table-layout > * {
+  .row;
+}
+
+.table-layout .row > * {
+  .col;
+  vertical-align: top;
+}
+
+/* ********************** */
+/* Vertical Border Layout */
+/* ********************** */
+
+body > .vertical-border-layout {
+  margin-top: -1px; /* Хак ошибки свойства таблицы border-collapse в FF */
+                    /* FF border-collapse table hack */
+}
+
+.vertical-border-layout {
+  .table;
+  height: 100%;
+}
+
+.vertical-border-layout > * {
+  .row;
+}
+
+.vertical-border-layout .top {
+  .col;
+}
+
+.vertical-border-layout .middle {
+  .col;
+  height: 100%;
+}
+
+.vertical-border-layout .middle > * {
+  height: 100%;
+}
+
+.vertical-border-layout .bottom {
+  .col;
+}
+
+/* ************************ */
+/* Horisontal Border Layout */
+/* ************************ */
+
+.horizontal-border-layout {
+  .table;
+}
+
+.horizontal-border-layout > * {
+  .row;
+}
+
+.horizontal-border-layout .left {
+  .col;
+}
+
+.horizontal-border-layout .center {
+  .col;
+  width: 100%;
+}
+
+.horizontal-border-layout .right {
+  .col;
+}
+
+/* ************** */
+/* Other elements */
+/* ************** */
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.item {
+}
+
+.panel {
+  .block;
+}
+
+.label {
+  .inline;
+}
