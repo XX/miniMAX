@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html debug="true">
+<!-- http://www.maxdesign.com.au/articles/css-layouts/two-fixed-spread/ -->
+<head>
+  <title>Minimax site example</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="../main/css/reset-2.0.css" />
+  <link rel="stylesheet" type="text/css" href="../main/css/minimax.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="../main/css/minimax-tools.min.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+</head>
+
+<body>
+  <div class="vertical-border-layout horizontal-expand">
+    <div class="row">
+      <div class="top">
+        <div id="header-container">
+          <div class="item fixed-width centric">
+            <div id="header">
+              <h1>Minimax Site</h1>
+            </div>
+          </div>
+        </div>
+        <div id="navigation-container">
+          <div class="item fixed-width centric">
+            <div id="navigation">
+              <div class="horizontal-layout">
+                <div class="item"><a href="#">Home</a></div>
+                <div class="item"><a href="#">About</a></div>
+                <div class="item"><a href="#">Services</a></div>
+                <div class="item"><a href="#">Contacts</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="middle">
+        <div class="horizontal-border-layout fixed-width centric">
+          <div class="row">
+            <div class="center horizontal-expand">
+              <div id="content">
+                <h2>
+                    Page heading
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+                </p>
+                <p>
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                </p>
+                <p>
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                </p>
+              </div>
+            </div>
+            <div class="right" id="left-side">
+              <div id="aside">
+                <h2>
+                    Aside heading
+                </h2>
+                <p>
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="bottom" id="footer-container">
+        <div class="item fixed-width centric">
+          <div id="footer">
+          Minimax (0) 2013
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/minimax.js"></script>
+</body>
+
+</html> 

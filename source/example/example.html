@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>miniMAX example</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="../main/css/reset-2.0.css" />
+  <link rel="stylesheet" type="text/css" href="../main/css/minimax.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+  <link rel="stylesheet" type="text/css" href="../main/css/minimax-tools.min.css" />
+</head>
+
+<body>
+<table class="vertical-border-layout horizontal-expand">
+  <tr><td class="middle centered">
+    <!--<div class="panel" style="width: 800px"></div>-->
+    <table class="vertical-border-layout" style="width: 800px">
+      <tr><td class="top centered">
+      logo
+      <tr></td>
+      <tr><td class="middle">
+        <div class="item">
+        content
+        </div>
+      </td></tr>
+      <tr><td class="bottom">
+      (0) 2013
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+
+<table class="vertical-border-layout">
+<tr><td class="middle">
+<div class="panel">
+<table class="vertical-border-layout">
+<tr><td class="top">
+testo
+<tr></td>
+<tr><td class="middle">
+<div class="item">
+<!--euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />-->
+    euiwyohdjsfhsdjkfhjkd<br />
+</div>
+</td></tr>
+</table>
+</div>
+</td></tr>
+</table>
+
+<table class="vertical-expand horizontal-expand">
+ <tr><td class="expand-content">
+
+<!-- <div class="centered" style="height: auto; min-height: 100%">
+
+<!-- <table class="vertical-expand">
+<td>
+<div class="inline"> -->
+  <div id="container" class="panel">
+  <div class="inline" style="height: 100%">
+    <!--euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />
+    euiwyohdjsfhsdjkfhjkd<br />-->
+ <table class="vertical-expand horizontal-expand">
+<tr>
+<td class="expand-content">
+	<table class="vertical-border-layout min-vertical-expand horizontal-expand">
+	  <tr>
+	  <td class="top">
+	    <div id="header" class="item centered"><div class="label">logo</div></div>
+	  </td>
+	  </tr>
+	  <tr>
+	  <td class="center">
+	  <div id="content" class="item vertical-expand">
+	    <table class="horizontal-border-layout horizontal-expand">
+	      <tr>
+	      <td class="left">
+			<div id="left_side" class="item">test</div>
+		  </td>
+		  <td class="center">
+			<div id="central" class="item">test</div>
+		  </td>
+		  </tr>
+		</table>
+	  </div>
+	  </td>
+	  </tr>
+	  <tr>
+	  <td class="bottom">
+	    <div id="footer" class="item">(0) 2013</div>
+	  </td>
+	  </tr>
+	</table>
+</td>
+</tr>
+</table>
+  </div>
+  </div>
+  </div>
+<!--</div>
+</td>
+</table>-->
+</td>
+</tr>
+</table>
+<!--
+  <div class="item-1">item in panel</div>
+  <div class="panel">
+	<div class="item">test</div>
+  </div>
+  
+  <div class="item-1">vertical-layout in panel</div>
+  <div class="panel">
+  <div class="vertical-layout">
+	<div class="item">test</div>
+	<div class="item">test</div>
+  </div>
+  </div>
+  
+  <div class="item-1">horizontal-layout in panel</div>
+  <div class="panel">
+  <div class="horizontal-layout">
+	<div class="item">test</div>
+	<div class="item">test</div>
+  </div>
+  </div>
+  
+  <div class="item-1">horizontal-layout in vertical-layout in panel</div>
+  <div class="panel">
+	<div class="vertical-layout">
+	  <div class="item">
+	  <div class="horizontal-layout">
+		<div class="item">test</div>
+		<div class="item">testo</div>
+	  </div>
+	  </div>
+	  <div class="item">
+	  <div class="horizontal-layout">
+		<div class="item">test</div>
+		<div class="item">testo</div>
+	  </div>
+	  </div>
+	</div>
+  </div>
+  
+  <div class="item-1">vertical-layout in horizontal-layout in panel</div>
+  <div class="panel">
+	<div class="horizontal-layout">
+	  <div class="item">
+	  <div class="vertical-layout">
+		<div class="item">test</div>
+		<div class="item">testo</div>
+	  </div>
+	  </div>
+	  <div class="item">
+	  <div class="vertical-layout">
+		<div class="item">test</div>
+		<div class="item">testo</div>
+	  </div>
+	  </div>
+	</div>
+  </div>
+  
+  <div class="item-1">other</div>
+  <div class="panel">
+	<div class="horizontal-layout">
+	  <div class="item">test</div>
+	  <div class="item">testo</div>
+	  <div class="item vertical-layout">
+		<div class="item">test</div>
+		<div class="item">testo</div>
+	  </div>
+	  <div class="item vertical-layout">
+		<div class="item">test</div>
+		<div class="item">testo</div>
+	  </div>
+	</div>
+  </div>
+-->
+  <script src="js/minimax.js"></script>
+</body>
+
+</html>
