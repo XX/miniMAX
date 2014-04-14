@@ -49,12 +49,22 @@
 /* Vertical Layout */
 /* *************** */
 
+.vertical-layout-expand {
+  display: block;
+}
+
+.vertical-layout-expand > * {
+  display: block;
+  position: relative;
+  right: 0;
+}
+
 .vertical-layout {
-  display: inline-block;
+  display: table;
 }
 
 .vertical-layout > * {
-  display: block;
+  display: table-row;
   position: relative;
   right: 0;
 }
